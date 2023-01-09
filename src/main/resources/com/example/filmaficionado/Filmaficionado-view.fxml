@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TitledPane fx:id="kategorier" animated="false" text="Kategorier">
+              <content>
+                <AnchorPane fx:id="kateforierKasse" minHeight="0.0" minWidth="0.0" prefHeight="214.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+            <TitledPane fx:id="film" animated="false" text="Film">
+              <content>
+                <AnchorPane fx:id="filmKasse" minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="153.0" />
+              </content>
+            </TitledPane>
+            <TextField fx:id="filmInfoKasse" prefHeight="242.0" prefWidth="149.0" />
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <Pane prefHeight="48.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="søgFilm" layoutX="83.0" layoutY="12.0" />
+            <Label layoutX="32.0" layoutY="16.0" text="Søg film ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <right>
+      <Pane prefHeight="352.0" prefWidth="49.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="112.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="tilføjKategorier" layoutX="93.0" layoutY="14.0" mnemonicParsing="false" text="Tilføj  kategorier" />
+            <Button fx:id="tilføjFilm" layoutX="282.0" layoutY="14.0" mnemonicParsing="false" text="Tilføj Film" />
+            <Button fx:id="redigerFilm" layoutX="410.0" layoutY="14.0" mnemonicParsing="false" text="Rediger filmbeskrivelse" />
+         </children>
+      </Pane>
+   </bottom>
+   <left>
+      <Pane prefHeight="278.0" prefWidth="48.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
